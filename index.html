@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kovalčík Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        #home {
+          background: url('./img/national-history-museum-4314035_1920.jpg') no-repeat center center fixed;
+          background-size: cover;
+          color: white;
+          padding: 100px 0;
+        }
+        @media (max-width: 750px) {
+            #map-container {
+            max-width: 100%;
+            margin: 0 auto;
+            }
+        }
+      </style> 
+  </head>
+  
+
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Umění 21. století</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Domů</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">O nás</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Galerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Recenze</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-form">Zeptejte se</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#map">Mapa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Kontakty</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sekce Home -->
+
+        <section id="home" class="py-25">
+            <div class="container text-center" >
+              <h1 class="display-3 mt-4">Umění 21. století</h1>
+              <h2 class="h4">Jupiter Club, Velké Meziříčí</h2>
+              <div class="mt-4">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#reservationModal">Rezervovat vstupenky</button>
+                <button class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip text" data-animation="true">Tooltip - v zadání přeškrtnuto</button>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Reservation Modal -->
+          <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="reservationModalLabel">Rezervace vstupenek</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Form elements here -->
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Jméno objednavatele</label>
+                      <input type="text" class="form-control" id="name" placeholder="Zadejte jméno">
+                    </div>
+                    <div class="form-group">
+                      <label for="contact">Kontakt na objednavatele</label>
+                      <input type="email" class="form-control" id="contact" placeholder="Email">
+                      <input type="tel" class="form-control mt-2" id="phone" placeholder="Telefon">
+                    </div>
+                    <div class="form-group">
+                      <label for="tickets">Počet vstupenek</label>
+                      <select class="form-control" id="tickets">
+                        <option>1</option>
+                        <option>2</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="date">Datum platnosti vstupenek</label>
+                      <input type="date" class="form-control" id="date">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+                  <button type="button" class="btn btn-primary">Rezervovat</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!-- About -->
+    <section id="about" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./img/crowd-7810353_1920.jpg" alt="Obrázek 1" class="img-fluid mb-3">
+          <h3>Lorem, ipsum.</h3>
+          <p class="font1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam commodi magni odio? Veritatis magnam dignissimos eveniet expedita consequuntur modi?</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./img/student-1258137_1920.jpg" alt="Obrázek 2" class="img-fluid mb-3">
+          <h3>Sit amet?</h3>
+          <p class="font2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nostrum eos tempore dolorem similique ea dolores eaque eligendi itaque exercitationem.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="./img/toy-3112171_1920.jpg" alt="Obrázek 3" class="img-fluid mb-3">
+          <h3>Consectetur adipisicing elit.</h3>
+          <p class="font3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam porro modi quidem aut explicabo provident quod. Dolore assumenda tempora sunt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Galerie -->
+  <section id="gallery" class="py-5">
+    <div class="row"></div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/crowd-7810353_1920.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/student-1258137_1920.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/toy-3112171_1920.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+  </section>
+  
+  <!-- Recenze -->
+  <section id="testimonials" class="bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center py-4 h2">
+            Recenze
+        </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis earum delectus recusandae nesciunt itaque autem, beatae officia excepturi ratione nemo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita praesentium qui eveniet illum quasi assumenda numquam laboriosam vitae sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum sit quisquam molestias cum autem ipsam iste saepe praesentium et?</p>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatem? Unde porro ullam illum, facere aliquam odio culpa a accusantium.</p>
+                </div>
+            </div>
+        </div>
+        <!-- more cards -->
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact-form" class="py-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <h2 class="text-center mb-4">Zeptejte se</h2>
+                <form>
+                <div class="form-group">
+                <label for="name">Jméno</label>
+                <input type="text" class="form-control" id="name" placeholder="Zadejte jméno">
+                </div>
+                <div class="form-group">
+                <label for="surname">Příjmení</label>
+                <input type="text" class="form-control" id="surname" placeholder="Zadejte příjmení">
+                </div>
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Zadejte email">
+                </div>
+                <div class="form-group">
+                <label for="message">Váš Dotaz</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Vaše zpráva"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Odeslat</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Section 6: Google mapa -->
+  <section id="map" class="py-5">
+    <div class="container" id="map-container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433.63520268776796!2d16.012752604367236!3d49.354530576930166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470d6f07e8c290bb%3A0xf57635929fbf7519!2sJUPITER%20club%2C%20s.r.o.!5e0!3m2!1scs!2scz!4v1691408391037!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!--Kontakty -->
+  <section id="contacts" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><i class="fas fa-envelope"></i> Email: info@example.com</li>
+            <li><i class="fas fa-phone"></i> Telefon: +1234567890</li>
+            <li><i class="fas fa-map-marker-alt"></i> Adresa: Velke Mezirici, 594 01</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+            <h3>Social Platforms</h3>
+          <ul class="list-inline social-icons">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook contact-icon">
+            </i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter contact-icon"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-tiktok contact-icon"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram contact-icon"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
